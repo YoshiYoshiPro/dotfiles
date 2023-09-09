@@ -57,4 +57,3 @@ if [[ "$(uname -m)" == "arm64" ]] && ! [[ -f "/Library/Apple/System/Library/Laun
 fi
 
 echo "Initialization complete!"
-exit 0
