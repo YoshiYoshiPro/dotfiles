@@ -6,8 +6,14 @@ if [[ "$(uname)" != "Darwin" ]]; then
     exit 1
 fi
 
-# Install brew
-if ! command -v brew &> /dev/null; then
+# Determine Homebrew installation location based on architecture
+BREW_PATH="/usr/local/bin/brew"
+if [[ "$(uname -m)" == "arm64" ]]; then
+    BREW_PATH="/opt/homebrew/bin/brew"
+fi
+
+# Install Homebrew if not installed
+if ! command -v $BREW_PATH &> /dev/null; then
     echo "Installing Homebrew..."
     /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     if [[ $? -ne 0 ]]; then
@@ -17,14 +23,11 @@ if ! command -v brew &> /dev/null; then
     echo "Homebrew installed successfully."
 fi
 
-if [[ "$(uname -m)" == "arm64" ]] && ! grep -q 'eval "$(/opt/homebrew/bin/brew shellenv)"' /Users/${USER}/.zprofile; then
+# Add Homebrew initialization to .zprofile if it's not there
+if ! grep -q "eval \"$($BREW_PATH shellenv)\"" /Users/${USER}/.zprofile; then
     echo 'Adding Homebrew initialization to .zprofile...'
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/${USER}/.zprofile
-    if [[ $? -ne 0 ]]; then
-        echo "Error: Failed to update .zprofile."
-        exit 1
-    fi
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    echo "eval \"$($BREW_PATH shellenv)\"" >> /Users/${USER}/.zprofile
+    eval "$($BREW_PATH shellenv)"
     if [[ $? -ne 0 ]]; then
         echo "Error: Failed to initialize Homebrew environment."
         exit 1
