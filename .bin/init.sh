@@ -10,22 +10,36 @@ fi
 if ! command -v brew &> /dev/null; then
     echo "Installing Homebrew..."
     /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    if [[ $? -ne 0 ]]; then
+        echo "Error: Failed to install Homebrew."
+        exit 1
+    fi
     echo "Homebrew installed successfully."
 fi
 
 if [[ "$(uname -m)" == "arm64" ]] && ! grep -q 'eval "$(/opt/homebrew/bin/brew shellenv)"' /Users/${USER}/.zprofile; then
     echo 'Adding Homebrew initialization to .zprofile...'
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/${USER}/.zprofile
+    if [[ $? -ne 0 ]]; then
+        echo "Error: Failed to update .zprofile."
+        exit 1
+    fi
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    if [[ $? -ne 0 ]]; then
+        echo "Error: Failed to initialize Homebrew environment."
+        exit 1
+    fi
 fi
 
 # Install xcode
 if ! xcode-select -p &> /dev/null; then
     echo "Installing Command Line Tools for Xcode..."
     xcode-select --install
+    if [[ $? -ne 0 ]]; then
+        echo "Error: Failed to install Command Line Tools for Xcode."
+        exit 1
+    fi
     echo "Command Line Tools for Xcode installed successfully."
-else
-    echo "Command Line Tools for Xcode are already installed."
 fi
 
 # Install Rosetta 2 for Apple Silicon
