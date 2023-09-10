@@ -1,3 +1,4 @@
+// git-czのテンプレートを設定する
 module.exports = {
   disableEmoji: false,
   format: "{type}: {emoji}{subject}",
