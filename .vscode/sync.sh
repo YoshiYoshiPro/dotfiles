@@ -3,8 +3,8 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 VSCODE_SET_DIR="${HOME}/Library/Application Support/Code/User"
 
-# Link settings.json
-if [ -L "${VSCODE_SET_DIR}/settings.json" ]; then
+# Link settings.json if it doesn't exist or isn't a symbolic link
+if [ ! -L "${VSCODE_SET_DIR}/settings.json" ] && [ ! -e "${VSCODE_SET_DIR}/settings.json" ]; then
   ln -fsvn "${SCRIPT_DIR}/settings.json" "${VSCODE_SET_DIR}/settings.json"
 fi
 
