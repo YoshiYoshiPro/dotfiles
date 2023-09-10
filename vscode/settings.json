@@ -6,7 +6,6 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "chatgpt.gpt3.apiKey": "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",
   "editor.inlineSuggest.enabled": true,
   "workbench.activityBar.visible": false,
   "settingsSync.ignoredSettings": [],
