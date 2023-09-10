@@ -1,0 +1,236 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vscode-icons",
+  "codic.ACCESS_TOKEN": "8xvqj6rF9JHnKB3fsC6mcEkLZTOHsj7jtw",
+  "codic.case": "camelCase",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "chatgpt.gpt3.apiKey": "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",
+  "editor.inlineSuggest.enabled": true,
+  "workbench.activityBar.visible": false,
+  "settingsSync.ignoredSettings": [],
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "create-readme-openai.apiKey": "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",
+  "git.autofetch": true,
+  // Python
+  "python.linting.enabled": true, // Lintの有効化
+  "python.linting.pylintEnabled": false, // pylintの無効化
+  "python.linting.flake8Enabled": true, // flake8の有効化
+  "python.linting.lintOnSave": true, // ファイル保存時のlint実行
+  "python.formatting.provider": "autopep8", // フォーマッタにautopep8
+  "python.linting.flake8Args": ["--ignore=E501"],
+  "auto-readme.apiKey": "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",
+  "auto-readme.model": "gpt-4", // 1行の文字数制限を無視
+  "terminal.integrated.fontFamily": "Inconsolata for Powerline",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "on",
+  "cSpell.languageSettings": [],
+  "editor.tabSize": 2,
+  "hediet.vscode-drawio.knownPlugins": [],
+  "hediet.vscode-drawio.plugins": [],
+  "audioCues.diffLineDeleted": "off",
+  "audioCues.diffLineInserted": "off",
+  "audioCues.diffLineModified": "off",
+  "audioCues.lineHasBreakpoint": "off",
+  "audioCues.lineHasInlineSuggestion": "off",
+  "audioCues.lineHasError": "off",
+  "audioCues.lineHasFoldedArea": "off",
+  "audioCues.noInlayHints": "off",
+  "audioCues.notebookCellCompleted": "off",
+  "audioCues.notebookCellFailed": "off",
+  "audioCues.onDebugBreak": "off",
+  "audioCues.taskCompleted": "off",
+  "audioCues.taskFailed": "off",
+  "audioCues.terminalCommandFailed": "off",
+  "audioCues.terminalQuickFix": "off",
+  "liveshare.accessibility.voice": "ja-JP-Nanami",
+  "code-runner.runInTerminal": true, // iTerm2と同様のUI設定
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc -fexec-charset=CP932 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  "cmake.configureOnOpen": true,
+  "dart.flutterSdkPath": "/Users/yoshi/fvm/versions/3.10.2",
+  "go.toolsManagement.autoUpdate": true,
+  "nativescript.analytics.enabled": true,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": [
+    "source.organizeImports",
+    "source.addMissingImports"
+  ],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "　": true,
+    "：": true
+  },
+  "editor.linkedEditing": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/yoshi/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  },
+  "window.zoomLevel": 1,
+  "codesandbox.currentWorkspace": "18f9a4e5-3826-4f1e-8793-563371b7f0bf",
+  "remote.SSH.remotePlatform": {
+    "18f9a4e5-3826-4f1e-8793-563371b7f0bf.yoshiyoshipro.codesandbox-test.draft---rough-cloud.csb": "linux"
+  },
+  "githubPullRequests.pullBranch": "never",
+
+  // ファイル保存時にフォーマッタ実行
+  "editor.formatOnSave": true,
+  // ファイル保存時、最終行に改行を挿入する
+  "files.insertFinalNewline": true,
+  // ファイル保存時、最終行以降の空行を削除する
+  "files.trimFinalNewlines": true,
+  // ファイル保存時、末尾の空白をトリミングする
+  "files.trimTrailingWhitespace": true,
+
+  // ====================================
+  // フォーマッターとコード整形に関する設定
+  // ====================================
+  // 入力時、コードを自動的に整形をする
+  "editor.formatOnType": true,
+  // ペースト時、コードを自動的に整形をする
+  "editor.formatOnPaste": true,
+  // デフォルトのフォーマッターを設定する
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // ------------------------------------
+  // 言語別フォーマッター指定
+  // ------------------------------------
+  // HTML
+  "[html]": {
+    // 拡張機能のPrettierを適用する
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Pug
+  "[jade]": {
+    // 拡張機能のpug (jade) formatterを適用する
+    "editor.defaultFormatter": "ducfilan.pug-formatter"
+  },
+  // CSS
+  "[css]": {
+    // 拡張機能のPrettierを適用する
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // SCSS
+  "[scss]": {
+    // 拡張機能のPrettierを適用する
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JavaScript
+  "[javascript]": {
+    // 拡張機能のPrettierを適用する
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // json
+  "[json]": {
+    // 拡張機能のPrettierを適用する
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // PHP
+  "[php]": {
+    // 拡張機能のphpcbfを適用する
+    "editor.defaultFormatter": "persoderlind.vscode-phpcbf",
+    // ペースト時、自動的に整形しない
+    "editor.formatOnSave": false
+  },
+  // markdown
+  "[markdown]": {
+    // 拡張機能のmarkdownlintを適用する
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    // ペースト時、自動的に整形しない
+    "editor.formatOnPaste": false
+  },
+  // XML
+  "[xml]": {
+    // 拡張機能のXML Formatを適用する
+    "editor.defaultFormatter": "mikeburgh.xml-format"
+  },
+  // DOCTYPE宣言書き換え
+  "emmet.variables": {
+    "lang": "ja" // => <html lang="ja">
+  }
+}
