@@ -41,7 +41,6 @@
     "!Split",
     "!Split sequence"
   ],
-  "create-readme-openai.apiKey": "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",
   "git.autofetch": true,
   // Python
   "python.linting.enabled": true, // Lintの有効化
