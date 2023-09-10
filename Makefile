@@ -1,5 +1,5 @@
 # Do everything.
-all: init link defaults brew github
+all: init link defaults brew github sync
 
 # Set initial preference.
 init:
@@ -29,4 +29,10 @@ brew:
 github:
 	@echo "\033[0;34mRun github.sh\033[0m"
 	.bin/github.sh
+	@echo "\033[0;32mDone.\033[0m"
+
+# VSCode sync dotfiles.
+sync:
+	@echo "\033[0;34mRun sync.sh\033[0m"
+	vscode/sync.sh
 	@echo "\033[0;32mDone.\033[0m"

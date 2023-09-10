@@ -21,3 +21,4 @@ chsh -s /bin/zsh
 - zsh設定ファイル（.zshrc, .zprofile）は手動でルートディレクトリに配置する。
 - Raycastの設定ファイルを取り込む必要がある。`raycast/`に`Raycast.rayconfig`ファイルがあるので、Raycastのimport機能で取り込みが可能。Raycastを起動し、設定ファイルを開く。`Advanced`の項目からImportできる。パスワードはNotionに記載してある。（自分用メモ）
 - git設定ファイルは、`~/.config/git/`下に`config`と`ignore`という名前のファイルで`.gitignore_global`と`.gitconfig`の内容を反映させる。
+- git-czの設定ファイル`changelog.config.js`をルートディレクトリに配置する。
