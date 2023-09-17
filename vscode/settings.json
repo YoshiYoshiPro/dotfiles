@@ -1,7 +1,6 @@
 {
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "vscode-icons",
-  "codic.ACCESS_TOKEN": "8xvqj6rF9JHnKB3fsC6mcEkLZTOHsj7jtw",
   "codic.case": "camelCase",
   "[python]": {
     "editor.formatOnType": true
