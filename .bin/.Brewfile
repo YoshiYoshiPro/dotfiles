@@ -76,6 +76,7 @@ brew "zlib"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-git-prompt"
+brew "tmux"
 
 cask "adobe-creative-cloud"
 cask "appcleaner"
@@ -99,12 +100,3 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 cask "warp"
 cask "zoom"
-
-mas "Kindle", id: 405399194
-mas "LINE", id: 539883307
-mas "Magnet", id: 441258766
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Remote Desktop", id: 1295203466
-mas "Microsoft Word", id: 462054704
-mas "Twitter", id: 1482454543
